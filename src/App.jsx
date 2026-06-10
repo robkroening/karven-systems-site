@@ -48,41 +48,39 @@ function App() {
         <section id="services" className="section">
           <div className="sectionHeader centered">
             <p className="eyebrow">What Karven Builds</p>
-            <h2>Practical digital systems for real businesses.</h2>
+            <h2>Custom spaces and digital systems for real businesses.</h2>
             <p>
-              Karven Systems focuses on clean, useful technology that helps
-              businesses look more professional, operate more efficiently, and
-              reduce repetitive manual work.
+              Karven Systems combines hands-on building experience with modern software
+              engineering — helping businesses improve the spaces they operate in and
+              the systems they rely on every day.
             </p>
           </div>
 
           <div className="grid three">
             <div className="serviceCard">
               <span className="cardNumber">01</span>
-              <h3>Websites & Brand Pages</h3>
+              <h3>Custom Builds & Renovation</h3>
               <p>
-                Clean, professional websites for businesses that need to explain
-                their work, show credibility, and turn visitors into real leads.
+                Thoughtful renovation, finish work, and space improvements built around
+                cleaner design, stronger function, and better everyday use.
               </p>
             </div>
 
             <div className="serviceCard">
               <span className="cardNumber">02</span>
-              <h3>Business Automation</h3>
+              <h3>Websites & Brand Pages</h3>
               <p>
-                Simple systems that reduce repetitive admin work, connect forms
-                and spreadsheets, and keep business information moving
-                automatically.
+                Clean, professional websites for businesses that need to explain their
+                work, show credibility, and turn visitors into real leads.
               </p>
             </div>
 
             <div className="serviceCard">
               <span className="cardNumber">03</span>
-              <h3>Custom Cloud Tools</h3>
+              <h3>Automation & Cloud Tools</h3>
               <p>
-                Lightweight tools and integrations built with modern cloud
-                technology for businesses that need something more specific than
-                an off-the-shelf app.
+                Simple systems that reduce repetitive admin work, connect forms and
+                spreadsheets, and keep business information moving automatically.
               </p>
             </div>
           </div>
