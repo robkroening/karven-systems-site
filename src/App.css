@@ -40,10 +40,20 @@ a {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-size: 1.15rem;
   font-weight: 900;
   letter-spacing: -0.04em;
   color: #1f2320;
+}
+
+.brand img {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  object-fit: cover;
 }
 
 .navbar nav {
@@ -161,6 +171,7 @@ h3 {
 .heroCard,
 .serviceCard,
 .projectCard,
+.projectImage,
 .contactBox {
   background: rgba(255, 250, 242, 0.8);
   border: 1px solid rgba(31, 35, 32, 0.1);
@@ -277,7 +288,8 @@ h3 {
 .serviceCard p,
 .projectCard p,
 .about p,
-.contactBox p {
+.contactBox p,
+.processStep p {
   color: #4f5d4f;
   line-height: 1.7;
   font-size: 1rem;
@@ -286,6 +298,11 @@ h3 {
 .altSection {
   border-top: 1px solid rgba(31, 35, 32, 0.09);
   border-bottom: 1px solid rgba(31, 35, 32, 0.09);
+}
+
+.projectShowcase {
+  display: grid;
+  gap: 28px;
 }
 
 .projectCard {
@@ -334,6 +351,62 @@ h3 {
   font-size: 0.9rem;
 }
 
+.projectImages {
+  display: grid;
+  gap: 22px;
+}
+
+.projectImageGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.projectImage {
+  overflow: hidden;
+}
+
+.projectImage img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.projectImage.large img {
+  max-height: 520px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.projectImageGrid .projectImage img {
+  height: 340px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.processSection {
+  padding-top: 82px;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.processStep {
+  padding: 30px;
+  border-left: 1px solid rgba(31, 35, 32, 0.14);
+}
+
+.processStep span {
+  display: inline-flex;
+  margin-bottom: 18px;
+  color: #9a6a3a;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
 .about {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -362,34 +435,6 @@ h3 {
   margin-bottom: 28px;
 }
 
-.processSection {
-  padding-top: 82px;
-}
-
-.processGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.processStep {
-  padding: 30px;
-  border-left: 1px solid rgba(31, 35, 32, 0.14);
-}
-
-.processStep span {
-  display: inline-flex;
-  margin-bottom: 18px;
-  color: #9a6a3a;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-}
-
-.processStep p {
-  color: #4f5d4f;
-  line-height: 1.7;
-}
-
 @media (max-width: 850px) {
   .navbar {
     align-items: flex-start;
@@ -404,7 +449,8 @@ h3 {
   .hero,
   .three,
   .projectCard,
-  .about {
+  .about,
+  .processGrid {
     grid-template-columns: 1fr;
   }
 
@@ -423,6 +469,21 @@ h3 {
     justify-content: flex-start;
   }
 
+  .projectImageGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectImage.large img,
+  .projectImageGrid .projectImage img {
+    height: auto;
+    max-height: none;
+  }
+
+  .processStep {
+    border-left: none;
+    border-top: 1px solid rgba(31, 35, 32, 0.14);
+  }
+
   h1 {
     font-size: clamp(3.1rem, 16vw, 5rem);
   }
@@ -438,14 +499,4 @@ h3 {
   .contactBox {
     padding: 34px 24px;
   }
-
-  .processGrid {
-  grid-template-columns: 1fr;
-}
-
-.processStep {
-  border-left: none;
-  border-top: 1px solid rgba(31, 35, 32, 0.14);
-}
-
 }
