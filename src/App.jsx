@@ -23,9 +23,9 @@ function App() {
             <p className="eyebrow">Custom Builds • Websites • Cloud Systems</p>
             <h1>Stronger spaces. Smarter systems.</h1>
             <p className="heroText">
-              Karven Systems builds custom websites, automation tools, and
-              cloud-backed systems for small businesses, realtors, builders,
-              and service-based brands.
+              Karven Systems helps small businesses, builders, realtors, and
+              service-based brands with custom renovations, websites,
+              automation tools, and cloud-backed systems.
             </p>
 
             <div className="heroActions">
@@ -35,12 +35,12 @@ function App() {
           </div>
 
           <div className="heroCard">
-            <h2>Built to look sharp and work smarter.</h2>
+            <h2>Built for better spaces and smarter systems.</h2>
             <ul>
+              <li>Custom renovations and finish work</li>
               <li>Business websites and landing pages</li>
               <li>Workflow and admin automation</li>
-              <li>Real estate and service business tools</li>
-              <li>Cloud-backed systems and integrations</li>
+              <li>Cloud-backed tools and integrations</li>
             </ul>
           </div>
         </section>
@@ -50,9 +50,9 @@ function App() {
             <p className="eyebrow">What Karven Builds</p>
             <h2>Custom spaces and digital systems for real businesses.</h2>
             <p>
-              Karven Systems combines hands-on building experience with modern software
-              engineering — helping businesses improve the spaces they operate in and
-              the systems they rely on every day.
+              Karven Systems combines hands-on building experience with modern
+              software engineering — helping businesses improve the spaces they
+              operate in and the systems they rely on every day.
             </p>
           </div>
 
@@ -61,8 +61,9 @@ function App() {
               <span className="cardNumber">01</span>
               <h3>Custom Builds & Renovation</h3>
               <p>
-                Thoughtful renovation, finish work, and space improvements built around
-                cleaner design, stronger function, and better everyday use.
+                Thoughtful renovation, finish work, and space improvements built
+                around cleaner design, stronger function, and better everyday
+                use.
               </p>
             </div>
 
@@ -70,8 +71,8 @@ function App() {
               <span className="cardNumber">02</span>
               <h3>Websites & Brand Pages</h3>
               <p>
-                Clean, professional websites for businesses that need to explain their
-                work, show credibility, and turn visitors into real leads.
+                Clean, professional websites for businesses that need to explain
+                their work, show credibility, and turn visitors into real leads.
               </p>
             </div>
 
@@ -79,8 +80,9 @@ function App() {
               <span className="cardNumber">03</span>
               <h3>Automation & Cloud Tools</h3>
               <p>
-                Simple systems that reduce repetitive admin work, connect forms and
-                spreadsheets, and keep business information moving automatically.
+                Simple systems that reduce repetitive admin work, connect forms
+                and spreadsheets, and keep business information moving
+                automatically.
               </p>
             </div>
           </div>
@@ -216,7 +218,8 @@ function App() {
               <h3>Understand the workflow</h3>
               <p>
                 We look at the current process, what is taking too much time,
-                and where a website, automation, or custom tool could help.
+                and where a website, automation, renovation, or custom tool
+                could help.
               </p>
             </div>
 
@@ -250,14 +253,16 @@ function App() {
             <div>
               <p>
                 Karven Systems is built around a simple idea: good systems should
-                be strong, useful, and easy to maintain. Whether it is a website,
-                an automation workflow, or a cloud-backed tool, the goal is to
-                create something that looks sharp and works reliably.
+                be strong, useful, and easy to maintain. Whether it is a
+                renovation, a website, an automation workflow, or a cloud-backed
+                tool, the goal is to create something that looks sharp and works
+                reliably.
               </p>
               <p>
-                The focus is not overcomplicated software. It is practical tools
-                that help small businesses save time, stay organized, and
-                present themselves professionally.
+                The focus is not overcomplicated software or overbuilt spaces.
+                It is practical work that helps small businesses save time, stay
+                organized, improve their spaces, and present themselves
+                professionally.
               </p>
             </div>
           </div>
@@ -266,7 +271,7 @@ function App() {
         <section id="contact" className="section contactSection">
           <div className="contactBox">
             <p className="eyebrow">Start a Project</p>
-            <h2>Have a website, workflow, or business system you want built?</h2>
+            <h2>Have a space, website, workflow, or business system you want built?</h2>
             <p>
               Send a message with what you are trying to build or automate, and
               Karven Systems will help map out the simplest solution.
