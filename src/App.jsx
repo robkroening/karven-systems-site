@@ -274,7 +274,7 @@ function App() {
               Karven Systems will help map out the simplest solution.
             </p>
 
-            <a className="primaryButton" href="mailto:rob.kroening@gmail.com">
+            <a className="primaryButton" href="mailto:karvensystems@gmail.com">
               Email Karven Systems
             </a>
           </div>
