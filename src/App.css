@@ -305,6 +305,17 @@ h3 {
   gap: 28px;
 }
 
+.projectBlock {
+  display: grid;
+  gap: 28px;
+}
+
+.projectBlock + .projectBlock {
+  margin-top: 76px;
+  padding-top: 76px;
+  border-top: 1px solid rgba(31, 35, 32, 0.09);
+}
+
 .projectCard {
   padding: 42px;
   display: grid;
@@ -324,6 +335,10 @@ h3 {
   font-weight: 900;
   letter-spacing: 0.18em;
   font-size: 0.8rem;
+}
+
+.constructionProject .projectCard::before {
+  content: "CUSTOM BUILD";
 }
 
 .projectType {
@@ -382,6 +397,39 @@ h3 {
   height: 340px;
   object-fit: cover;
   object-position: top;
+}
+
+.remodelProjectCard {
+  grid-template-columns: 1.15fr 0.85fr;
+}
+
+.remodelDetails {
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.focalGallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.remodelFocal img {
+  height: 460px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.remodelSecondaryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.remodelSecondaryGrid .projectImage img {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .processSection {
@@ -450,7 +498,9 @@ h3 {
   .three,
   .projectCard,
   .about,
-  .processGrid {
+  .processGrid,
+  .focalGallery,
+  .remodelSecondaryGrid {
     grid-template-columns: 1fr;
   }
 
@@ -465,7 +515,8 @@ h3 {
     justify-self: stretch;
   }
 
-  .projectDetails {
+  .projectDetails,
+  .remodelDetails {
     justify-content: flex-start;
   }
 
@@ -474,7 +525,9 @@ h3 {
   }
 
   .projectImage.large img,
-  .projectImageGrid .projectImage img {
+  .projectImageGrid .projectImage img,
+  .remodelFocal img,
+  .remodelSecondaryGrid .projectImage img {
     height: auto;
     max-height: none;
   }
