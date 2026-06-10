@@ -4,7 +4,11 @@ function App() {
   return (
     <div className="site">
       <header className="navbar">
-        <div className="brand">Karven Systems</div>
+        <div className="brand">
+          <img src="/karven-logo.png" alt="Karven Systems logo" />
+          <span>Karven Systems</span>
+        </div>
+
         <nav>
           <a href="#services">Services</a>
           <a href="#projects">Projects</a>
@@ -23,6 +27,7 @@ function App() {
               cloud-backed systems for small businesses, realtors, builders,
               and service-based brands.
             </p>
+
             <div className="heroActions">
               <a className="primaryButton" href="#contact">Start a Project</a>
               <a className="secondaryButton" href="#projects">View Work</a>
@@ -93,22 +98,49 @@ function App() {
             </p>
           </div>
 
-          <div className="projectCard">
-            <div>
-              <p className="projectType">Website Automation</p>
-              <h3>Form-to-Website Listing System</h3>
-              <p>
-                Built a lightweight workflow where a realtor can submit property
-                information through a form and automatically update a live
-                listings page without editing website code.
-              </p>
+          <div className="projectShowcase">
+            <div className="projectCard">
+              <div>
+                <p className="projectType">Website Automation</p>
+                <h3>Form-to-Website Listing System</h3>
+                <p>
+                  Built a lightweight workflow where a realtor can submit
+                  property information through a form and automatically update a
+                  live listings page without editing website code.
+                </p>
+              </div>
+
+              <div className="projectDetails">
+                <span>Google Forms</span>
+                <span>Google Sheets</span>
+                <span>Website Integration</span>
+                <span>Live Updates</span>
+              </div>
             </div>
 
-            <div className="projectDetails">
-              <span>Google Forms</span>
-              <span>Google Sheets</span>
-              <span>Website Integration</span>
-              <span>Live Updates</span>
+            <div className="projectImages">
+              <div className="projectImage large">
+                <img
+                  src="/boone-automation-flow.png"
+                  alt="Listing automation workflow diagram"
+                />
+              </div>
+
+              <div className="projectImageGrid">
+                <div className="projectImage">
+                  <img
+                    src="/boone-properties-listings-page.png"
+                    alt="Automated real estate listings page"
+                  />
+                </div>
+
+                <div className="projectImage">
+                  <img
+                    src="/listing-form-1.png"
+                    alt="Google Form listing intake"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -160,6 +192,7 @@ function App() {
               <p className="eyebrow">Why Karven</p>
               <h2>Built with a mix of craftsmanship and software engineering.</h2>
             </div>
+
             <div>
               <p>
                 Karven Systems is built around a simple idea: good systems should
@@ -184,6 +217,7 @@ function App() {
               Send a message with what you are trying to build or automate, and
               Karven Systems will help map out the simplest solution.
             </p>
+
             <a className="primaryButton" href="mailto:rob.kroening@gmail.com">
               Email Karven Systems
             </a>
