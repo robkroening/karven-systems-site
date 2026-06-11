@@ -11,6 +11,7 @@ function App() {
 
         <nav>
           <a href="#services">Services</a>
+          <a href="#cloud-demo">Cloud Demo</a>
           <a href="#projects">Projects</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
@@ -84,6 +85,125 @@ function App() {
                 and spreadsheets, and keep business information moving
                 automatically.
               </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="section offerSection">
+          <div className="offerGrid">
+            <div className="offerContent">
+              <p className="eyebrow">Practical Digital Systems</p>
+              <h2>What I can build for your business.</h2>
+              <p>
+                For small service businesses, Karven Systems focuses on simple,
+                useful tools that help collect leads, organize requests, and
+                reduce manual follow-up.
+              </p>
+            </div>
+
+            <div className="offerList">
+              <span>Quote request forms</span>
+              <span>Contact forms</span>
+              <span>Customer intake workflows</span>
+              <span>Google Sheets lead tracking</span>
+              <span>Email notifications</span>
+              <span>Follow-up reminders</span>
+              <span>Simple websites and landing pages</span>
+              <span>AWS/cloud-hosted tools</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="cloud-demo" className="section cloudSection">
+          <div className="sectionHeader centered">
+            <p className="eyebrow">AWS Cloud Automation Demo</p>
+            <h2>Cloud-based lead intake for service businesses.</h2>
+            <p>
+              A practical automation system that helps businesses collect
+              customer requests, organize leads, send notifications, and make
+              follow-up easier.
+            </p>
+          </div>
+
+          <div className="cloudDemoGrid">
+            <div className="cloudDemoContent">
+              <p className="projectType">Cloud System</p>
+              <h3>Lead Intake & Follow-Up System</h3>
+              <p>
+                This demo shows how a small business can replace scattered
+                texts, emails, phone notes, and manual spreadsheets with one
+                simple quote request workflow.
+              </p>
+              <p>
+                A customer submits a request through a website form. The system
+                processes the submission, stores the lead, notifies the business
+                owner, and keeps the request organized for follow-up.
+              </p>
+
+              <div className="cloudFeatureList">
+                <span>Quote request form</span>
+                <span>Email notifications</span>
+                <span>Lead tracking</span>
+                <span>Customer confirmation</span>
+                <span>Follow-up workflow</span>
+                <span>Serverless backend</span>
+              </div>
+            </div>
+
+            <div className="cloudWorkflowCard">
+              <h3>How it works</h3>
+
+              <div className="workflowItem">
+                <span>01</span>
+                <p>Customer submits a quote or contact request.</p>
+              </div>
+
+              <div className="workflowItem">
+                <span>02</span>
+                <p>The request is processed automatically in the cloud.</p>
+              </div>
+
+              <div className="workflowItem">
+                <span>03</span>
+                <p>The business owner receives an email notification.</p>
+              </div>
+
+              <div className="workflowItem">
+                <span>04</span>
+                <p>The lead is stored so follow-up is easier to manage.</p>
+              </div>
+
+              <div className="cloudTechStack">
+                <p>Example AWS stack</p>
+                <strong>
+                  S3 • CloudFront • API Gateway • Lambda • DynamoDB • SES •
+                  CloudWatch
+                </strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section starterSection">
+          <div className="starterBox">
+            <div>
+              <p className="eyebrow">Starter Project Offer</p>
+              <h2>No upfront service fee for a small starter project.</h2>
+            </div>
+
+            <div>
+              <p>
+                Karven Systems is currently taking on a few small starter
+                projects with no upfront service fee. If the finished work is
+                helpful and you are satisfied with it, you can pay whatever you
+                think is fair.
+              </p>
+              <p>
+                This is a simple way to test a website, quote form, intake
+                workflow, automation, or small digital system before committing
+                to a larger project.
+              </p>
+              <a className="primaryButton" href="#contact">Start a Starter Project</a>
             </div>
           </div>
         </section>
@@ -252,6 +372,12 @@ function App() {
 
             <div>
               <p>
+                Karven Systems is run by Robert Kroening, a Charlotte-based
+                software engineer and AWS Solutions Architect Certified
+                professional with hands-on experience building and renovating
+                real spaces.
+              </p>
+              <p>
                 Karven Systems is built around a simple idea: good systems should
                 be strong, useful, and easy to maintain. Whether it is a
                 renovation, a website, an automation workflow, or a cloud-backed
@@ -273,13 +399,42 @@ function App() {
             <p className="eyebrow">Start a Project</p>
             <h2>Have a space, website, workflow, or business system you want built?</h2>
             <p>
-              Send a message with what you are trying to build or automate, and
+              Send a message with what you currently do manually, what type of
+              customers you serve, and what you would like to make easier.
               Karven Systems will help map out the simplest solution.
             </p>
 
-            <a className="primaryButton" href="mailto:karvensystems@gmail.com">
-              Email Karven Systems
-            </a>
+            <div className="contactActions">
+              <a className="primaryButton" href="mailto:karvensystems@gmail.com">
+                Email Karven Systems
+              </a>
+              <a
+                className="secondaryButton"
+                href="https://www.linkedin.com/in/robert-kroening-02066615b/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View LinkedIn
+              </a>
+            </div>
+
+            <div className="contactLinks">
+              <a href="mailto:karvensystems@gmail.com">karvensystems@gmail.com</a>
+              <a
+                href="https://www.instagram.com/builtbykarven"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Instagram: @builtbykarven
+              </a>
+              <a
+                href="https://www.linkedin.com/in/robert-kroening-02066615b/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn: Robert Kroening
+              </a>
+            </div>
           </div>
         </section>
       </main>
