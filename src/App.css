@@ -133,7 +133,8 @@ h3 {
   margin-bottom: 32px;
 }
 
-.heroActions {
+.heroActions,
+.contactActions {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
@@ -172,7 +173,10 @@ h3 {
 .serviceCard,
 .projectCard,
 .projectImage,
-.contactBox {
+.contactBox,
+.offerContent,
+.offerList,
+.starterBox {
   background: rgba(255, 250, 242, 0.8);
   border: 1px solid rgba(31, 35, 32, 0.1);
   box-shadow: 0 24px 80px rgba(31, 35, 32, 0.08);
@@ -289,10 +293,180 @@ h3 {
 .projectCard p,
 .about p,
 .contactBox p,
-.processStep p {
+.processStep p,
+.offerContent p,
+.starterBox p {
   color: #4f5d4f;
   line-height: 1.7;
   font-size: 1rem;
+}
+
+.offerSection {
+  padding-top: 38px;
+}
+
+.offerGrid {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.offerContent {
+  padding: 38px;
+}
+
+.offerContent h2 {
+  margin-bottom: 18px;
+}
+
+.offerList {
+  padding: 34px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.offerList span {
+  display: flex;
+  align-items: center;
+  min-height: 52px;
+  padding: 13px 15px;
+  border-radius: 18px;
+  background: #ede2d0;
+  color: #5b3b22;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.cloudSection {
+  padding-top: 86px;
+  padding-bottom: 86px;
+  border-top: 1px solid rgba(31, 35, 32, 0.09);
+}
+
+.cloudDemoGrid {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.cloudDemoContent {
+  padding: 42px;
+  border-radius: 28px;
+  background: rgba(255, 250, 242, 0.82);
+  border: 1px solid rgba(31, 35, 32, 0.1);
+  box-shadow: 0 24px 80px rgba(31, 35, 32, 0.08);
+}
+
+.cloudDemoContent h3 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.05;
+  margin-bottom: 18px;
+}
+
+.cloudDemoContent p {
+  color: #4f5d4f;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.cloudFeatureList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.cloudFeatureList span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #ede2d0;
+  color: #5b3b22;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.cloudWorkflowCard {
+  padding: 34px;
+  border-radius: 28px;
+  background: #1f2320;
+  color: #fffaf2;
+  box-shadow: 0 24px 80px rgba(31, 35, 32, 0.16);
+}
+
+.cloudWorkflowCard h3 {
+  color: #fffaf2;
+  margin-bottom: 24px;
+}
+
+.workflowItem {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255, 250, 242, 0.14);
+}
+
+.workflowItem span {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #fffaf2;
+  color: #1f2320;
+  font-size: 0.85rem;
+  font-weight: 900;
+}
+
+.workflowItem p {
+  margin: 0;
+  color: rgba(255, 250, 242, 0.78);
+  line-height: 1.6;
+}
+
+.cloudTechStack {
+  margin-top: 26px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 250, 242, 0.08);
+}
+
+.cloudTechStack p {
+  margin: 0 0 8px;
+  color: rgba(255, 250, 242, 0.68);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.cloudTechStack strong {
+  display: block;
+  color: #fffaf2;
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+.starterSection {
+  padding-top: 30px;
+  padding-bottom: 92px;
+}
+
+.starterBox {
+  padding: 46px;
+  display: grid;
+  grid-template-columns: 0.86fr 1.14fr;
+  gap: 44px;
+  align-items: center;
+  background:
+    radial-gradient(circle at top right, rgba(154, 106, 58, 0.14), transparent 32%),
+    rgba(255, 250, 242, 0.86);
+}
+
+.starterBox p:last-of-type {
+  margin-bottom: 28px;
 }
 
 .altSection {
@@ -477,10 +651,34 @@ h3 {
 }
 
 .contactBox p {
-  max-width: 560px;
+  max-width: 620px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 28px;
+}
+
+.contactActions {
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.contactLinks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+  color: #5f6b5f;
+  font-size: 0.95rem;
+}
+
+.contactLinks a {
+  border-bottom: 1px solid rgba(95, 107, 95, 0.28);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.contactLinks a:hover {
+  color: #1f2320;
+  border-color: rgba(31, 35, 32, 0.6);
 }
 
 @media (max-width: 850px) {
@@ -496,6 +694,10 @@ h3 {
 
   .hero,
   .three,
+  .offerGrid,
+  .offerList,
+  .cloudDemoGrid,
+  .starterBox,
   .projectCard,
   .about,
   .processGrid,
@@ -513,6 +715,14 @@ h3 {
   .heroCard {
     max-width: none;
     justify-self: stretch;
+  }
+
+  .offerContent,
+  .offerList,
+  .cloudDemoContent,
+  .cloudWorkflowCard,
+  .starterBox {
+    padding: 28px;
   }
 
   .projectDetails,
