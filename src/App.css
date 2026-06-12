@@ -792,6 +792,33 @@ h3 {
 }
 
 
+
+/* Contractor Demo Video */
+
+.contractorDemoIntro {
+  padding-top: 42px;
+  padding-bottom: 48px;
+}
+
+.demoVideoBox {
+  width: min(900px, calc(100% - 40px));
+  max-height: 520px;
+  margin: 36px auto 0;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(31, 35, 32, 0.1);
+  box-shadow: 0 24px 80px rgba(31, 35, 32, 0.12);
+  background: #111411;
+}
+
+.demoVideo {
+  width: 100%;
+  max-height: 520px;
+  display: block;
+  object-fit: contain;
+  background: #111411;
+}
+
 @media (max-width: 850px) {
   .navbar {
     align-items: flex-start;
@@ -884,6 +911,21 @@ h3 {
 
   .lead-form {
     grid-template-columns: 1fr;
+  }
+
+  .contractorDemoIntro {
+    padding-top: 28px;
+    padding-bottom: 36px;
+  }
+
+  .demoVideoBox {
+    width: min(100%, calc(100% - 24px));
+    max-height: 360px;
+    border-radius: 20px;
+  }
+
+  .demoVideo {
+    max-height: 360px;
   }
 
 }
