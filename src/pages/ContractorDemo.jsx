@@ -13,6 +13,13 @@ export default function ContractorDemo() {
             automatically.
           </p>
         </div>
+
+        <div className="demoVideoBox">
+          <video controls playsInline className="demoVideo">
+            <source src="/contractor-demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </section>
 
       <ContractorLeadForm />
